@@ -17,19 +17,19 @@ namespace Aprendiendo_.Net
 
 
                 Console.WriteLine("Universidad Ecci");
-                Console.WriteLine("Soluciones .Net Guia 1");
+                Console.WriteLine("Soluciones .Net Guia 12");
                 Console.WriteLine("Señor usuario digite la solucion a ejecutar");
 
                 Console.WriteLine("1. Operaciones Matematicas");
                 Console.WriteLine("2. Funciones Matematicas");
-                Console.WriteLine("3. Universidad Ecci");
-                Console.WriteLine("4. Soluciones .Net Guia 1");
-                Console.WriteLine("5. Operaciones Matematicas");
-                Console.WriteLine("6. Funciones Matematicas");
-                Console.WriteLine("7. Soluciones .Net Guia 1");
-                Console.WriteLine("8. Universidad Ecci");
-                Console.WriteLine("9. Soluciones .Net Guia 1");
-                Console.WriteLine("10. Operaciones Matematicas");
+                Console.WriteLine("3. Validador de Respuestas");
+                Console.WriteLine("4. Promedio de Produccion");
+                Console.WriteLine("5. Estacion Climatica");
+                Console.WriteLine("6. Caracterizacion de Numeros");
+                Console.WriteLine("7. Estadistica de Pesos");
+                Console.WriteLine("8. Proceso de Produccion de Huevos");
+                Console.WriteLine("9. Sistema de Calificaciones - Indira, Universidad Ecci ");
+                Console.WriteLine("10. Nomina de Empleados Universidad Ecci");
 
 
 
@@ -73,6 +73,7 @@ namespace Aprendiendo_.Net
 
     
                     default: Console.WriteLine("La opcion no se encuentra en el menú");
+                        break;
 
                 }
 
