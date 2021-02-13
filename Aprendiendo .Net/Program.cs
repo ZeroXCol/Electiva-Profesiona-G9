@@ -46,6 +46,8 @@ namespace Aprendiendo_.Net
                         break;
 
                     case 2:
+                        Ejercicio2 Ej2 = new Ejercicio2();
+                        
                         break;
 
                     case 3:
