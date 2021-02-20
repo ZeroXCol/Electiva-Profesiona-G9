@@ -34,7 +34,7 @@ namespace Aprendiendo_.Net
             {
                 Random Rnd = new Random();
                 generatempmax = Rnd.Next(tempmin,tempmax);
-                generatempmin = Rnd.Next(tempmin, generatempmax);
+                generatempmin = Rnd.Next(tempmin, generatempmax + 1);
 
                 Console.WriteLine("/////////////////////////////////////////////////////////////////" );
 

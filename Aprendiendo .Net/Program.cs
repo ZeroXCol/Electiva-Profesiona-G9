@@ -79,6 +79,9 @@ namespace Aprendiendo_.Net
 
                     case 10:
 
+                        Ejercicio10 Ej10 = new Ejercicio10();
+                        Ej10.Nomina_empleados();
+
                         break;
 
     
