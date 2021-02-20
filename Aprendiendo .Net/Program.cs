@@ -60,6 +60,10 @@ namespace Aprendiendo_.Net
                         break;
 
                     case 5:
+
+                        Ejercicio5 Ej5 = new Ejercicio5();
+                        Ej5.Estacion_climatica();
+
                         break;
 
                     case 6:
