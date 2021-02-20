@@ -53,6 +53,10 @@ namespace Aprendiendo_.Net
                     case 3:
                         break;
                     case 4:
+
+                        Ejercicio4 Ej4 = new Ejercicio4();
+                        Ej4.Salario();
+
                         break;
 
                     case 5:
