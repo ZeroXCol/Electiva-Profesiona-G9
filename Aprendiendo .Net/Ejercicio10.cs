@@ -14,7 +14,7 @@ namespace Aprendiendo_.Net
             int columnas = 11;
             int titulo = -1;
             int Opción;
-
+            string Entrada = "";
             
             
             string [,] tabla = new string [filas,columnas];
@@ -34,64 +34,66 @@ namespace Aprendiendo_.Net
             tabla[0, 10] ="|Total Devengado |";
 
 
+            
+            
 
+                Console.Clear();
 
-            Console.Clear();
-
-            for (int fila = 1; fila < filas; fila++)
-            {
-
-                for (int columna = 0; columna < columnas; columna++)
+                for (int fila = 1; fila < filas; fila++)
                 {
-                    if (titulo != 10)
+
+                    for (int columna = 0; columna < columnas; columna++)
                     {
-
-                    titulo++;
-
-                    }
-                    else 
-                    {
-                        titulo = 0;
-                    }
-
-
-                     Console.WriteLine("Total devengado");
-                     Console.WriteLine("Ingresa los datos solicitados a continuación");
-                     Console.WriteLine("Por favor ingresa " + tabla [0,titulo]);
-
-                    tabla[fila, columna] = Console.ReadLine();
-                     Console.Clear();
-
-                    for (int i = 0; i < filas; i++)
-                    {
-                            
-
-                        for (int j = 0; j < columnas; j++)
+                        if (titulo != 10)
                         {
 
-                            Console.Write(tabla[i , j]+ " |");
+                            titulo++;
 
                         }
-                        Console.WriteLine("| \n");
+                        else
+                        {
+                            titulo = 0;
+                        }
+
+
+                        Console.WriteLine("Total devengado");
+                        Console.WriteLine("Ingresa los datos solicitados a continuación");
+                        Console.WriteLine("Por favor ingresa " + tabla[0, titulo]);
+
+                        tabla[fila, columna] = Console.ReadLine();
+                        Console.Clear();
+
+                        for (int i = 0; i < filas; i++)
+                        {
+
+
+                            for (int j = 0; j < columnas; j++)
+                            {
+
+                                Console.Write(tabla[i, j] + " |");
+
+                            }
+                            Console.WriteLine("| \n");
+
+                        }
+
+
+
+
+
 
                     }
-                    
-                     
-                    
-                    
 
 
                 }
-                
 
-            }
+                Console.WriteLine("Total deducido");
 
-            Console.WriteLine("Total deducido");
 
-            
 
+           
         }
-        
+            
 
         
     }

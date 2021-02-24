@@ -11,31 +11,34 @@ namespace Aprendiendo_.Net
         double Bonificacion;
         double Salario_Total;
         string Nombre;
+        string Entrada = "";
         string[] Semana = new string [] { "Lunes", "Martes","Miercoles", "Jueves", "Viernes", "Sabado" };
 
         int Cantidad_diaria;
         int Cantidad_acumulada;
-        int Cantidad_Miercoles;
-        int Cantidad_Jueves;
-        int Cantidad_Viernes;
-        int Cantidad_Sabado;
+        
 
 
         public void Salario()
         {
-            Console.WriteLine("Digita el nombre del empleado");
-            Nombre = Console.ReadLine();
 
-            for (int i = 0; i < Semana.Length; i++)
-            {
+            do {
+                Console.Clear();
+                Console.WriteLine("Universidad ECCI");
+                Console.WriteLine("Promedio de producción");
+                Console.WriteLine("Digita el nombre del empleado");
+                Nombre = Console.ReadLine();
 
-                Console.WriteLine("Digita la cantidad del día " + Semana[i]);
+                for (int i = 0; i < Semana.Length; i++)
+                {
+
+                Console.WriteLine("Digita la cantidad producida el día " + Semana[i]);
                 Cantidad_diaria = int.Parse(Console.ReadLine());
                 Cantidad_acumulada = Cantidad_acumulada + Cantidad_diaria;
                 Console.WriteLine("Cantidad al momento: " + Cantidad_acumulada);
 
 
-            }
+                }
 
                 if(Cantidad_acumulada >100 && Cantidad_acumulada < 200)
                 {
@@ -54,7 +57,7 @@ namespace Aprendiendo_.Net
 
 
 
-            }
+                }
                 else if (Cantidad_acumulada > 200 && Cantidad_acumulada < 300)
                 {
                 Base = 2.5;
@@ -69,7 +72,7 @@ namespace Aprendiendo_.Net
                     Console.WriteLine("Más el 12% es igual a: " + Salario_Total + "$");
 
 
-            }
+                }
                 else if (Cantidad_acumulada >=300 && Cantidad_acumulada < 400)
                 {
 
@@ -84,7 +87,7 @@ namespace Aprendiendo_.Net
                     Salario_Total = Calculo_Salario + Bonificacion;
                     Console.WriteLine("Más el 14% es igual a: " + Salario_Total + "$");
 
-            }
+                }
                 else if (Cantidad_acumulada >400)
                 {
                     Base = 3.5;
@@ -99,7 +102,7 @@ namespace Aprendiendo_.Net
                     Console.WriteLine("Más el 16% es igual a: " + Salario_Total + "$");
 
 
-            }
+                }
                 else if (Cantidad_acumulada < 100 && Cantidad_acumulada > 0)
                 {
                     Base = 2;
@@ -110,16 +113,19 @@ namespace Aprendiendo_.Net
                     Console.WriteLine("Tu salario es: " + Calculo_Salario + "$");
                 }
 
-            
-            
-           
 
 
+
+
+
+                Console.WriteLine("¿Desea Repetir la operación? digita si o no");
+                Entrada = Console.ReadLine();
+
+            }  while(Entrada == "si");
         }
 
-        
 
-        
+
 
 
 

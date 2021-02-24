@@ -21,58 +21,77 @@ namespace Aprendiendo_.Net
             int cuentaok = 0;
             double promedioerror;
             double promediook;
+            string Entrada = "";
 
-            Console.WriteLine("Digita la temperatura minima");
-            tempmin = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digita la temperatura máxima");
-            tempmax = int.Parse(Console.ReadLine());
-            Console.WriteLine("Digita el numero de días a medir");
-            entradadias = int.Parse(Console.ReadLine());
-            dias = new int[entradadias];
 
-            for (int i = 0; i < dias.Length; i++)
+            do
             {
-                Random Rnd = new Random();
-                generatempmax = Rnd.Next(tempmin,tempmax);
-                generatempmin = Rnd.Next(tempmin, generatempmax + 1);
+                Console.Clear();
+                Console.WriteLine("Universidad ECCI");
+                Console.WriteLine("Estación Climática");
+                Console.WriteLine("Digita la temperatura minima");
+                tempmin = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digita la temperatura máxima");
+                tempmax = int.Parse(Console.ReadLine());
+                Console.WriteLine("Digita el numero de días a medir");
+                entradadias = int.Parse(Console.ReadLine());
+                dias = new int[entradadias];
 
-                Console.WriteLine("/////////////////////////////////////////////////////////////////" );
-
-                Console.WriteLine("Temperatura máxima del día "+i+" es: " + generatempmax);
-                Console.WriteLine("Temperatura mínima del día " + i + " es: " + generatempmin);
-
-                Console.WriteLine("/////////////////////////////////////////////////////////////////");
-
-
-                if (generatempmax == 9 && generatempmin == 9)
+                for (int i = 0; i < dias.Length; i++)
                 {
-                    cuentaerror++;
+                    Random Rnd = new Random();
+                    generatempmax = Rnd.Next(tempmin, tempmax);
+                    generatempmin = Rnd.Next(tempmin, generatempmax + 1);
+
+                    Console.WriteLine("/////////////////////////////////////////////////////////////////");
+
+                    Console.WriteLine("Temperatura máxima del día " + i + " es: " + generatempmax);
+                    Console.WriteLine("Temperatura mínima del día " + i + " es: " + generatempmin);
+
+                    Console.WriteLine("/////////////////////////////////////////////////////////////////");
+
+
+                    if (generatempmax == 9 && generatempmin == 9)
+                    {
+                        cuentaerror++;
+
+                    }
+                    else
+                    {
+
+                        cuentaok++;
+
+                    }
+
+
+
 
                 }
-                else { 
-                
-                    cuentaok++;
 
-                }
+                Console.WriteLine("El numero de errores es: " + cuentaerror);
+                Console.WriteLine("El numero de temperaturas ok es: " + cuentaok);
+                Console.WriteLine("El numero de días es: " + entradadias);
 
-                
-
-
-            }
-
-            Console.WriteLine("El numero de errores es: " + cuentaerror);
-            Console.WriteLine("El numero de temperaturas ok es: " + cuentaok);
-            Console.WriteLine("El numero de días es: " + entradadias);
-
-            promedioerror = (cuentaerror * 100 ) / entradadias ;
-            promediook = (cuentaok * 100) / entradadias;
-            Console.WriteLine("-------------------------------------------------------\n");
-            Console.WriteLine("El porcentaje de error es: %"+promedioerror);
-            Console.WriteLine("El porcentaje de temperaturas validas es: %" + promediook);
+                promedioerror = (cuentaerror * 100) / entradadias;
+                promediook = (cuentaok * 100) / entradadias;
+                Console.WriteLine("-------------------------------------------------------\n");
+                Console.WriteLine("El porcentaje de error es: %" + promedioerror);
+                Console.WriteLine("El porcentaje de temperaturas validas es: %" + promediook);
 
 
 
+                Console.WriteLine("¿Deasea repetir la operación? Digite si o no");
+                Entrada = Console.ReadLine();
 
+                promedioerror = 0;
+                promediook = 0;
+                cuentaerror = 0;
+                cuentaok = 0;
+                entradadias = 0;
+
+
+
+            } while (Entrada == "si");
 
         }
 

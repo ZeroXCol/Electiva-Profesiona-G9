@@ -19,7 +19,6 @@ namespace Aprendiendo_.Net
                 Console.WriteLine("Universidad Ecci");
                 Console.WriteLine("Soluciones .Net Guia 12");
                 Console.WriteLine("Señor usuario digite la solucion a ejecutar");
-
                 Console.WriteLine("1. Operaciones Matematicas");
                 Console.WriteLine("2. Funciones Matematicas");
                 Console.WriteLine("3. Validador de Respuestas");
@@ -51,6 +50,7 @@ namespace Aprendiendo_.Net
                         break;
 
                     case 3:
+
                         break;
                     case 4:
 
@@ -67,8 +67,18 @@ namespace Aprendiendo_.Net
                         break;
 
                     case 6:
+
+                        Ejercicio6 Ej6 = new Ejercicio6();
+                        Ej6.Caracterizacion_programas();
+
                         break;
+
+
                     case 7:
+
+                        Ejercicio7 Ej7 = new Ejercicio7();
+                        Ej7.Estadisticas_pesos();
+
                         break;
 
                     case 8:
