@@ -82,9 +82,17 @@ namespace Aprendiendo_.Net
                         break;
 
                     case 8:
+
+                        Ejercicio8 Ej8 = new Ejercicio8();
+                        Ej8.Produccion_huevos();
+
                         break;
 
                     case 9:
+
+                        Ejercicio9 Ej9 = new Ejercicio9();
+                        Ej9.Sistema_calificaciones();
+
                         break;
 
                     case 10:
