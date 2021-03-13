@@ -51,6 +51,10 @@ namespace Aprendiendo_.Net
 
                     case 3:
 
+                        Ejercicio3 Ej3 = new Ejercicio3();
+                        Ej3.ValidadorRespuestas();
+
+
                         break;
                     case 4:
 
