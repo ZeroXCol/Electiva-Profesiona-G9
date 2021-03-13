@@ -46,7 +46,7 @@ namespace Aprendiendo_.Net
 
                     case 2:
                         Ejercicio2 Ej2 = new Ejercicio2();
-                        
+                        Ej2.Funciones_matematicas();
                         break;
 
                     case 3:
